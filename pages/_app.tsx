@@ -2,7 +2,7 @@ import { AppProps } from 'next/app';
 
 import '../styles/index.scss';
 
-const Main: React.FunctionComponent = ({ Component, pageProps }): React.ReactElement => {
+const Main: React.FunctionComponent<AppProps> = ({ Component, pageProps }: AppProps): React.ReactElement => {
   return <Component {...pageProps} />;
 };
 
